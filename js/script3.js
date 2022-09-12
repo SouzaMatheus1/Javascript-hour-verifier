@@ -29,4 +29,4 @@ function somar(){
     result.innerHTML = `Result: ${s}`
 }
 
-// 157.245.249.144
+// 
