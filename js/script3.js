@@ -1,25 +1,24 @@
-// PAGE 2
+// PAGE 3
 function clicar(){
     let a = document.getElementById('area')
     a.addEventListener('onclick', clicar)
-    a.innerText = "Clicked!"
+    a.innerText = "Clicked!🤤🤤🤤"
     a.style.background = "rgba(178,192,248,1.1)"
 }
 
 function enter(){
     let a = document.getElementById('area')
     a.addEventListener('onmouseenter', enter)
-    a.innerText = 'In!'
+    a.innerText = 'CLICK!!!'
 }
 
 function leave(){
     let a = document.getElementById('area')
     a.addEventListener('onmouseleave', leave)
-    a.innerText = 'Out!'
+    a.innerText = 'Click here!'
 }
 
-
-// PAGE 3
+// PAGE 4
 function somar(){
     let tn1 = parseInt(document.getElementById('txtn1').value)
     let tn2 = parseInt(document.getElementById('txtn2').value)
@@ -29,4 +28,69 @@ function somar(){
     result.innerHTML = `Result: ${s}`
 }
 
-// 
+// PAGE 5
+function verify(){
+    let vel = Number(document.querySelector('input#vel').value)
+    if(vel <= 0){
+        alert('Insert a valid velocity!')
+    }else if(vel > 70){
+        alert('You was busted!')
+    }else{
+        alert("You wasn't busted!")
+    }
+
+    let result = document.querySelector('div#res')
+    result.innerHTML = `Last velocity: ${vel}km/h`
+}
+
+function cverify(){
+    let country = document.querySelector('input#country').value
+    if(country == null){
+        alert('Insert a valid country!')
+    }else if(country == 'Brasil'){
+        alert('Brasileiro!!')
+    }else{
+        alert('Gringo.')
+    }
+
+    let result = document.querySelector('div#res2')
+    result.innerText = `Last country: ${country}`
+}
+
+function hour(){
+    let data = new Date()
+    let hour = data.getHours()
+
+    let current_hour = document.querySelector('div#res3')
+    current_hour.innerHTML = `Current time: ${hour}`
+}
+
+function day(){
+    let now = new Date()
+    let day = now.getDay()
+    let current_day = document.querySelector('div#res4')
+
+    switch(day){
+        case 0:
+            current_day.innerHTML = 'Current day: Sunday'
+            break
+        case 1:
+            current_day.innerHTML = 'Current day: Monday'
+            break
+        case 2:
+            current_day.innerHTML = 'Current day: Tuesday'
+            break
+        case 3:
+            current_day.innerHTML = 'Current day: Wednesday'
+            break
+        case 4:
+            current_day.innerHTML = 'Current day: Thursday'
+            break
+        case 5:
+            current_day.innerHTML = 'Current day: Friday'
+            break
+        case 6:
+            current_day.innerHTML = 'Current day: Saturday'
+            break
+    }
+}

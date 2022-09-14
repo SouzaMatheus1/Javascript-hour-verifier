@@ -16,10 +16,30 @@ body {
     height: 300px;
     line-height: 300px;
     text-align: center;
-    margin: 5%;
+    margin: auto;
+    margin-top: 10%;
 }
 
 input{
-    margin: 0.1% 10% 0.1% 10%;
+    margin: auto;
     width: 100px;
+}
+
+h1{
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: white;
+}
+
+#res,#res2,#res3, #res4{
+    background-color: white;
+    padding: 1;
+    margin: auto;
+    margin-top: 3%;
+}
+#center{
+    margin: auto;
+    margin-top: 50px;
 }
