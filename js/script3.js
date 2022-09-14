@@ -94,3 +94,5 @@ function day(){
             break
     }
 }
+
+// EXERCICIO1
