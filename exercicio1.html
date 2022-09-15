@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style_.css">
-    <title>Exercise 1</title>
+    <title>Hour verifier</title>
 </head>
-<body>
+<body onload="charge()">
     <script src="js/script3.js"></script>
     <header>
-        <h1>Hour verifier</h1>
+        <h1>What's time is it?</h1>
     </header>
     <section>
-        <div>
-
+        <div id='msg'>
+            Current time:
         </div>
-        <div>
-
+        <div id="imgbox">
+            <img id="img" src="images/manha.jpg" alt="foto">
         </div>
     </section>
-    <footer>
-        <p>CursoEmVideo. &reg;</p>
+    <footer id="feet">
+        <p id ='reg'>CursoEmVideo. &reg;</p>
     </footer>
 </body>
 </html>

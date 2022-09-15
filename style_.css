@@ -1,23 +1,43 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-color: rgba(0, 255, 255, 0.466);
-    font: normal 15pt arial;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
     text-align: center;
+    font-weight: 500;
+    font-size: 28px;
 }
 
 section{
     background-color: white;
     border-radius: 12px;
-    padding: 8%;
+    padding: 3%;
     width: 25%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+div{
+    text-align: center;
+    padding: 1%;
 }
 
 footer{
+    margin-left: -0.55%;
+    background-color: aqua;
+    margin-top: 4%;
+    padding: 0;
     width: 100%;
-    margin-bottom: 0;
     position: fixed;
+}
+footer p{
+    margin-left: 1%;
+    font-weight: 500;
 }
