@@ -38,6 +38,14 @@ footer{
     position: fixed;
 }
 footer p{
+    margin-top: 1%;
     margin-left: 1%;
     font-weight: 500;
+}
+
+#identity{
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
 }
