@@ -103,7 +103,7 @@ let img = document.getElementById('img')
 let foot = document.querySelector('footer#feet')
 let reg = document.querySelector('p#reg')
 let date = new Date()
-let hour = 11//date.getHours()
+let hour = date.getHours()
 let minute = date.getMinutes()<10?'0':date.getMinutes()
 
 msg.innerHTML = `It's ${hour}:${minute}`
